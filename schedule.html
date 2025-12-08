@@ -1,0 +1,95 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  <title>MusicFest 2025 - Lineup</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MuiscFest <span>2025</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lineup.html">Lineup</a></li>
+          <li><a href="schedule.html" class="active">Schedule</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <h1>MuiscFest 2025 Schedule</h1>
+        <p>
+          The table shows the planned times for some of the main artists.
+          </p>
+
+
+          <div class="schedule-filters">
+            <button class="filters-btn active" data-day="all">All Days</button>
+            <button class="filters-btn" data-day="day1">Day 1</button>
+            <button class="filters-btn" data-day="day2">Day 2</button>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Artist</th>
+                  <th>Stage</th>
+                </tr>
+              </thead>
+              <tbody id="scheduleBody">
+                <!-- Day 1 -->
+                <tr data-day="day1">
+                  <td>Day 1</td>
+                  <td>16:00 - 17:00</td>
+                  <td>Burna Boy</td>
+                  <td>Main Stage</td>
+                </tr>
+                <tr data-day="day1">
+                  <td>Day 1</td>
+                  <td>17:30 - 18:30</td>
+                  <td>Drake</td>
+                  <td>Main Stage</td>
+                </tr>
+                <tr data-day="day1">
+                  <td>Day 1</td>
+                  <td>19:00 - 19:30</td>
+                  <td>Adele</td>
+                  <td>Main Stage</td>
+                </tr>
+
+                <!-- Day 2 -->
+                <tr data-day="day2">
+                  <td>Day 2</td>
+                  <td>15:00 - 16:00</td>
+                  <td>Rema</td>
+                  <td>Main Stage</td>
+                </tr>
+                <tr data-day="day1">
+                  <td>Day 1</td>
+                  <td>16:30 - 17:30</td>
+                  <td>Dave</td>
+                  <td>Main Stage</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 MusicFest. All rights reserved.</p>
+      </footer>
+    </body>
+    </html>
+
+
