@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  backround-color: #f3f4f6;
+  backround-color: #fef3cf;
   color: #111827
 }
 
@@ -104,7 +104,7 @@ nav a:hover (
 
 .card-grid,
 .artist-card {
-  backround color: #ffffff;
+  backround color: #fefce8;
   border: 1px solid #e5e7eb;
   padding: 1rem;
   border-radius: 8px;
@@ -134,7 +134,7 @@ nav a:hover (
   padding: 0.4rem 0.9rem;
   border: 1px solid #d1d5db;
   border-radius: 999px;
-  backround: #ffffff;
+  backround: #fffbeb;
   cursor: pointer;
 }
 
@@ -151,7 +151,7 @@ nav a:hover (
 table {
   width: 100%;
   border-collapse: collapse;
-  backround-color: #ffffff
+  backround-color: #fefce8
 }
 
 th, td {
@@ -162,7 +162,7 @@ th, td {
 
 
 form {
-  backround-color: #ffffff
+  backround-color: #fffbeb;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 1.4rem 1.1rem;
@@ -189,7 +189,7 @@ form {
 }
 
 form-messages.error {
-  backround-color: #fee2e2;
+  backround-color: #dcfce7;
   border: 1px solid #fecaca;
   color: #7f1d1d;
   padding: 0.rem;
