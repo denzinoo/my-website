@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  <title>MusicFest 2025 - Tickets</title>
+
+<link rel="stylesheet" href="style.css" />
+
+  <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MuiscFest <span>2025</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lineup.html">Lineup</a></li>
+          <li><a href="schedule.html">Schedule/a></li>
+          <li><a href="tickets.html" class="active">Tickets</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content section">
+        <h1>Ticket Reservation Form</h1>
+        <p>
+          Form allows users to access ticket and enter relevant details.
+        </p>
+
+        <form id="ticketForm" novalidate>
+
+          <div id="form-messages" atria-live="polite"></div>
+
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required />
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required />
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="phone" id="phone" name="phone" required />
+            <small class="error-message"></small>
+          </div>
+
+
+          <div class="form-group incline-group">
+            <div>
+              <label for="numTickets">Number of Tickets (1-10) *</label>
+              <input
+                type="number"
+                id="numTickets"
+                name="numTickets"
+                min="1"
+                max="10"
+                required
+              />
+              <small class="error-message"></small>
+          </div>
+
+          <div>
+            <lable for="ticketType">Ticket Type *</label>
+            <select id="ticketType" name="ticketType" required>
+              <option value="">-- Select --</option>
+              <option value="general">General Admission</option>
+              <option value="vip">VIP</option>
+              <option value="premium">Premium</option>
+            </select>
+            </small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="paymentMethod">Payment Method *</label>
+           <select id="paymentMethod" name="paymentMethod" required>
+              <option value="">-- Select --</option>
+              <option value="credit">Credit</option>
+              <option value="debit">Debit</option>
+              <option value="apple pay">Apple Pay</option>
+            </select>
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="specialReq">Special Requirements</label>
+            <textarea
+              id="specialReq"
+              name="specialReq"
+              rows="3"
+              placeholder="Accessibility needs, food allergies, etc."
+            ></textarea>
+          </div>
+
+          <div class="form-group" checkbox-group">
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms">I agree to the terms and conditions. *</label>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Submit</button>
+             <button type="reset" class="btn-secondary">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 MusicFest. </p>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
