@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top, #fef3cf 0, #fffbeb 45%, #fef9c3 100%);
+  background: radial-gradient(circle at top, #1d4ed8 0, #3b82f6 45%, #22c55e 100%);
   color: #111827;
 }
 
@@ -32,16 +32,16 @@ p {
 
 
 header {
-  background: linear-gradient (90deg, #111827, #1f2937);
+  background: linear-gradient(90deg, #111827, #1f2937);
   color: #f9fafb;
-  padding: 0.75rem 1ren;
+  padding: 0.75rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 8px 20px rgba (15, 23, 42, 0.45);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.45);
 }
 
 .logo {
