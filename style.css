@@ -208,7 +208,7 @@ nav a:hover {
 }
 
 .table-wrapper {
-  margin-top: 1.5ren;
+  margin-top: 1.5rem;
   overflow-x: auto;
 }
 
@@ -224,9 +224,10 @@ table {
 thead {
   background: linear-gradient(90deg, #f97316, #facc15);
   color: #111827;
-  text-transform: upeercase;
+  text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.8rem;
+}
   
 th,
 td {
