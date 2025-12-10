@@ -135,7 +135,7 @@ nav a:hover {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat (auto-fit, ninmax (220px, 1fr));
+  grid-template-columns: repeat (auto-fit, ninmax (150px, 1fr));
   gap: 1.25rem;
 }
 
