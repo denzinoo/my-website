@@ -159,6 +159,8 @@ nav a:hover {
   height: 150px;
   object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 0.6rem;
+  dispay: block;
 }
 
 
