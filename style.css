@@ -141,6 +141,12 @@ nav a:hover {
   margin-top: 1rem;
 }
 
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  justify-contrnt: flex-start;
+}
+
 .card-grid,
 .artist-card {
   background-color: #ffe8a3;
