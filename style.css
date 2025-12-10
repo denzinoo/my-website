@@ -246,33 +246,72 @@ tbody tr {
 
 
 form {
-  background-color: #fef9c3;
+  background-color: #fff3b0;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  padding: 1.4rem 1.1rem;
-  max-width: 600px;
-  margin-top: 1.5rem;
-  box-shadow: 0.10px 22px rgba (148, 163, 184, 0.4);
+  padding: 1.6rem 1.4rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 10px 22px rgba (148, 163, 184, 0.35);
 }
 
-.form-group {
-  margin-bottom: 0.9rem;
+form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #111827;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 0.45rem 0.55rem; 
+  padding: 0.6rem 1.2rem; 
   border-radius: 6px;
   border: 1px solid #d1d5db;
-  font-size: 0.9rem;
-  font-family: inherit;
+  margin-top: 0.35rem;
+  backround-color: #ffffff;
 }
 
-.form-group textarea {
-  min-height: 98px;
-  resize: vertical;
+textrea {
+  min-height: 100px;
+}
+
+.btn-primary,
+form button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease in-out;
+}
+
+.btn-primary {
+  background-color: #fbbf24;
+  color: #111827;
+}
+
+.btn-primary:hover {
+  background-color: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(245, 158,11, 0.45);
+}
+
+.reset-btn {
+  background-color: #d1d5db;
+  color: #111827;
+  margin-left: 0.6rem;
+}
+
+.reset-btn:hover {
+  background-color: #9ca3af;
+}
+
+form .form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1ren;
+  margin-top: 0.35rem;
 }
 
 .error-message {
@@ -281,22 +320,14 @@ form {
   margin-top: 0.25rem;
 }
 
-form-messages.error {
-  background-color: #dcfce7;
-  border: 1px solid #fecaca;
-  color: #7f1d1d;
-  padding: 0.rem;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+.error-message:{
+  font-size: 0.8rem;
+  margin-top: 0.35rem;
 }
+    
 
 footer {
-  background-color: #111827;
-  color: e5e7eb;
-  text-align: center;
-  padding: 0.75rem 1rem;
-  margin-top: 2rem;
-  font-size: 0.85rem;
+  margin-top: 3rem !important;
 }
 
 @media (max-width: 640px)  {
