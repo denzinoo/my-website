@@ -25,6 +25,18 @@ main {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+.content-section h1 {
+  color: #0f172a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  color: #1e293b;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 h1, h2, h3 {
   margin-top: 0;
   color: #0f172a;
@@ -378,8 +390,22 @@ form h2 {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.checkbox-group label {
+  display: inline-block;
+  margin-left: 0.5rem;
   font-weight: 600;
   color: #0f172a;
+}
+
+.inline-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .form-group input,
@@ -393,6 +419,13 @@ form h2 {
   background-color: #ffffff;
   font-size: 1rem;
   transition: all 0.2s ease;
+  color: #0f172a;
+  font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #64748b;
 }
 
 .form-group input:focus,
@@ -441,7 +474,28 @@ form .form-actions {
   font-size: 0.85rem;
   color: #dc2626;
   margin-top: 0.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  display: block;
+}
+
+#form-messages {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#form-messages.success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 2px solid #10b981;
+}
+
+#form-messages.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 2px solid #dc2626;
 }
 
 /* Footer */
