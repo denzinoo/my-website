@@ -103,19 +103,28 @@ function setupTicketFormValidation() {
     // If there are errors, show error message and stop
     if (hasErrors) {
       formMessages.textContent = "Please fix the errors shown in the form and try again.";
-      formMessages.classList.add("error");
+      formMessages.className = "error";
       formMessages.style.display = "block";
+      // Scroll to the message
+      formMessages.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       return;
     }
 
     // Success - show success message
     formMessages.textContent = "✓ Success! Your ticket reservation has been submitted successfully.";
-    formMessages.classList.add("success");
+    formMessages.className = "success";
     formMessages.style.display = "block";
+    
+    // Scroll to the message
+    formMessages.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     
     // Reset form after 2 seconds
     setTimeout(function() {
       form.reset();
+      // Hide message after reset
+      setTimeout(function() {
+        formMessages.style.display = "none";
+      }, 3000);
     }, 2000);
   });
 }
